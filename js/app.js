@@ -2,11 +2,11 @@ $(function () {
     var swiper = new Swiper('.swiper-container', {
       direction: 'vertical',
       // mousewheel: true,
-      // allowTouchMove: false,
-      // mousewheel: {
-      //   releaseOnEdges: true,
-      //   // forceToAxis: true,
-      // },
+      allowTouchMove: true,
+      mousewheel: {
+        releaseOnEdges: true,
+        // forceToAxis: true,
+      },
 
     //   autoplay: false,
     //   disableOnInteraction: true,
