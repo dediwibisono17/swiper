@@ -30,7 +30,7 @@ $(function () {
     });
 
     
-    swiper.autoplay.stop();
+ 
 
     // var mySwiper = document.querySelector('.swiper-container').swiper
 
