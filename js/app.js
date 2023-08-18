@@ -1,12 +1,12 @@
 $(function () {
     var swiper = new Swiper('.swiper-container', {
       direction: 'vertical',
-      mousewheel: true,
+      // mousewheel: true,
       allowTouchMove: false,
-    //   mousewheel: {
-    //     releaseOnEdges: true,
-    //     forceToAxis: true,
-    //   },
+      mousewheel: {
+        releaseOnEdges: true,
+        // forceToAxis: true,
+      },
 
     //   autoplay: false,
     //   disableOnInteraction: true,
