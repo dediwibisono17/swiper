@@ -11,11 +11,11 @@ $(function () {
     //   autoplay: false,
     //   disableOnInteraction: true,
     // //   scrollbar: { el: '.swiper-scrollbar' },
-    //   autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: true,
-    //     pauseOnMouseEnter: true,
-    // },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+        pauseOnMouseEnter: true,
+    },
       pagination: {
         el: '.swiper-pagination',
         type: 'fraction',
