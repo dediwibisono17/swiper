@@ -2,20 +2,20 @@ $(function () {
     var swiper = new Swiper('.swiper-container', {
       direction: 'vertical',
       // mousewheel: true,
-      allowTouchMove: false,
-      mousewheel: {
-        releaseOnEdges: true,
-        // forceToAxis: true,
-      },
+      // allowTouchMove: false,
+      // mousewheel: {
+      //   releaseOnEdges: true,
+      //   // forceToAxis: true,
+      // },
 
     //   autoplay: false,
     //   disableOnInteraction: true,
     // //   scrollbar: { el: '.swiper-scrollbar' },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: true,
-        pauseOnMouseEnter: true,
-    },
+    //   autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: true,
+    //     pauseOnMouseEnter: true,
+    // },
       pagination: {
         el: '.swiper-pagination',
         type: 'fraction',
