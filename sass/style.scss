@@ -107,6 +107,7 @@ body {
 .swiper-button-next:after, .swiper-button-prev:after {
     transform: rotate(90deg);
     font-size: 24px;
+    color: initial;
     @media screen and (max-width:766px) {
         font-size: 20px;
     }
