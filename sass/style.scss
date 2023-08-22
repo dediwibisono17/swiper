@@ -180,7 +180,13 @@ body {
 
 #button {
     position: fixed;
-    right: 0;
+    right: 8px;
     bottom: 80px;
     z-index: 8;
+    cursor: pointer;
+    img {
+        width: 16px;
+        height: 16px;
+        object-fit: contain;
+    }
 }

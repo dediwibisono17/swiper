@@ -76,7 +76,8 @@ $(function () {
 
     $("#button").click(function(){
       // alert(1)
-      $("html, body").animate({ scrollTop: 0 }, "slow");
+      // $("html, body").animate({ scrollTop: 0 }, "slow");
+      swiper.slideTo(0);
       // return false;
     })
 });
