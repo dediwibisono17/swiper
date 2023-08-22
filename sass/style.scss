@@ -44,13 +44,16 @@ body {
         left: 50%;
     
     }
-    p {
+    .wrap {
+
         width: 860px;
         padding-top: 32px;
         margin: 0 auto;
         @media screen and (max-width:766px) {
             width: 80%;
         }
+    }
+    p {
     }
     .titles {
         position: absolute;
@@ -108,4 +111,14 @@ body {
 
 .swiper-pagination {
     position: fixed;
+}
+
+.lines {
+    width: 200px;
+    height: 2px;
+    background: #111;
+    margin: 8px 0 16px;
+    @media screen and (max-width:766px) {
+        background: #111;
+    }
 }
