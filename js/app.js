@@ -1,12 +1,15 @@
 $(function () {
     var swiper = new Swiper('.swiper-container', {
       direction: 'vertical',
-      // mousewheel: true,
+      mousewheel: true,
       allowTouchMove: true,
-      mousewheel: {
-        releaseOnEdges: true,
-        // forceToAxis: true,
-      },
+      // observer: true,
+      // observeParents: true,
+      slidesPerView:1,
+      // mousewheel: {
+      //   releaseOnEdges: true,
+      //   // forceToAxis: true,
+      // },
 
     //   autoplay: false,
     //   disableOnInteraction: true,
@@ -26,6 +29,18 @@ $(function () {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
+      }
+    });
+
+    $("body").keyup(function(e) {
+
+      if(e.keyCode == 38) { // top
+        console.log('top')
+        $('.swiper-button-prev').click();
+      }
+      else if(e.keyCode == 40) { // bottom
+        $('.swiper-button-next').click();
+
       }
     });
 

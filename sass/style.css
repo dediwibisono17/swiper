@@ -27,6 +27,14 @@ body {
     text-align: center;
 }
 
+.swiper-button-next, .swiper-button-prev {
+
+    position: fixed;
+}
 .swiper-button-next:after, .swiper-button-prev:after {
     transform: rotate(90deg);
+}
+
+.swiper-pagination {
+    position: fixed;
 }
