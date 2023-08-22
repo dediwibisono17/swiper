@@ -50,7 +50,7 @@ body {
         padding-top: 32px;
         margin: 0 auto;
         @media screen and (max-width:766px) {
-            width: 80%;
+            width: 70%;
         }
     }
     p {
@@ -107,6 +107,9 @@ body {
 .swiper-button-next:after, .swiper-button-prev:after {
     transform: rotate(90deg);
     font-size: 24px;
+    @media screen and (max-width:766px) {
+        font-size: 20px;
+    }
 }
 
 .swiper-pagination {
