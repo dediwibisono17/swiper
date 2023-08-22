@@ -33,6 +33,21 @@ $(function () {
       }
     });
 
+    // let button = document.getElementById("button")
+
+
+    //   swiper.on("slideChange", function() {
+    //     console.log("slide changed - current slide is: " + this.realIndex )
+    //     if(this.realIndex == 0){
+    //       console.log("first slide do something")
+    //       button.disabled = false;  
+    //     }
+    //     else{
+    //       console.log("not first slide do somehing")
+    //       button.disabled = true;  
+    //     }
+    //   });
+
     $("body").keyup(function(e) {
       e.preventDefault();
       if(e.keyCode == 38) { // top
