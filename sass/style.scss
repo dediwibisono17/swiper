@@ -103,6 +103,19 @@ body {
 
     position: fixed;
 }
+
+.swiper-button-prev {
+    right: 11px;
+    left: initial;
+    top: 42%;
+    @media screen and (max-width:766px) {
+        right: initial;
+        left: 8px;
+        top: 50%;
+    }
+
+}
+
 .swiper-button-next:after, .swiper-button-prev:after {
     transform: rotate(90deg);
     font-size: 24px;
