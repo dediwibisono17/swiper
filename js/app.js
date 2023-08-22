@@ -56,7 +56,6 @@ $(function () {
       }
       else if(e.keyCode == 40) { // bottom
         $('.swiper-button-next').click();
-
       }
     });
 
@@ -74,5 +73,10 @@ $(function () {
     //   swiper.autoplay.stop();
     //   console.log('slider stop again');
     // });
-});
 
+    $("#button").click(function(){
+      // alert(1)
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      // return false;
+    })
+});

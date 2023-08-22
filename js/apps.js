@@ -31,5 +31,11 @@ $(function () {
   
   });
 
+  $("#button").click(function(){
+    alert(1)
+    // $("html, body").animate({ scrollTop: 0 }, "slow");
+    // return false;
+  })
+
  
 });
