@@ -5,130 +5,58 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet"
-            href="https://unpkg.com/swiper/swiper-bundle.min.css">
+            href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     </head>
     <style>
-        body {
-  padding: 0;
-  margin: 0;
+        html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #eee;
+    font-size: 14px;
+    font-family: 'Prompt';
 }
 
 .swiper-container {
     width: 100%;
-    height: 100vh;
-    position: relative;
-
-    .slider {
-        min-height: 50vh;
-
-        .swiper-slide {
-            background: #ccc;
-            overflow: hidden;
-            position: relative;
-            height: 100%;
-            text-align: center;
-            font-size: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          
-            .slide-inner {
-                position: absolute;
-                width: 100%;
-                height: 100vh;
-                left: 0;
-                top: 0;
-
-                img {
-                    position: absolute;
-                    width: 100%;
-                    left: 0;
-                    top: 0;
-                    bottom: 0;
-                    margin: auto;
-                }
-            }
-        }
-    }
-  
-    .swiper-pagination-bullet {
-        background-color: rgba($color: #000000, $alpha: 0);
-     }
-  
-    .swiper-pagination {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        width: 7em;
-        position: absolute;
-        z-index: 3;
-        right: 0;
-      
-        span {
-            margin-bottom: 3em;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.8rem;
-            letter-spacing: 0.07em;
-            color: #000;
-
-            &:focus {
-                outline: none;
-            }
-        }
-    }
+    height: 100%;
 }
 
-#content {
-    text-align: center;
-    color: white;
-    padding: 200px 0;
-    background: #002020;
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: left;
+    background-color: #fff;
 }
     </style>
     <body>
-        <!-- Swiper -->
         <div class="swiper-container">
-            <div class="slider swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="slide-inner">
-                        <img
-                            src="https://html.nkdev.info/piroll/assets/images/home-6-1.jpg"
-                            alt="home">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slide-inner">
-                        <img
-                            src="https://html.nkdev.info/piroll/assets/images/home-6-2.jpg"
-                            alt="home">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slide-inner">
-                        <img
-                            src="https://html.nkdev.info/piroll/assets/images/home-6-3.jpg"
-                            alt="home">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slide-inner">
-                        <img
-                            src="https://html.nkdev.info/piroll/assets/images/home-6-4.jpg"
-                            alt="home">
-                    </div>
-                </div>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Halo 10</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide3</div>
             </div>
             <div class="swiper-pagination"></div>
+            <!-- Pagination -->
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Arrows -->
         </div>
-
-        <div id="content">more content</div>
-
+        <!-- Swiper -->
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
         <script src="js/apps.js"></script>
     </body>
 </html>

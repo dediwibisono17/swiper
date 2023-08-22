@@ -33,7 +33,7 @@ $(function () {
     });
 
     $("body").keyup(function(e) {
-
+      e.preventDefault();
       if(e.keyCode == 38) { // top
         console.log('top')
         $('.swiper-button-prev').click();
