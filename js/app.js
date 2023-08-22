@@ -19,6 +19,7 @@ $(function () {
     //     disableOnInteraction: true,
     //     pauseOnMouseEnter: true,
     // },
+    initialSlide:0,
       pagination: {
         el: '.swiper-pagination',
         type: 'fraction',
