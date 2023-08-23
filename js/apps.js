@@ -1,3 +1,6 @@
+$(window).on('load', function() {
+  $('#myModal').modal('show');
+});
 $(function () {
   var swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
@@ -35,5 +38,7 @@ $(function () {
     swiper.slideTo(0);
   })
 
- 
+
+  
+  
 });

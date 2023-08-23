@@ -74,6 +74,8 @@ p {
     h2 {
         color: #111;
         text-align: center;
+        font-family: 'Prompt';
+        font-weight: 700;
         font-size: 2.8rem;
         @media screen and (max-width:766px) {
             text-align: left;
