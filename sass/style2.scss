@@ -34,12 +34,17 @@ display: block;
 
 .swiper-slide {
 display: flex;
-justify-content: flex-start;
-align-items: baseline;
 font-size: 18px;
+justify-content: center;
+align-items: center;
 text-align: left;
 // background-color: #fff;
 background: linear-gradient(45deg, #eee, transparent);
+@media screen and (max-width:766px) {
+    justify-content: flex-start;
+    align-items: baseline;
+    
+}
 p {
     @media screen and (max-width:766px) {
         font-size: 1rem;
@@ -176,8 +181,10 @@ p {
 .thumb {
     width: 100%;
     height: 320px;
+    margin-bottom: 16px;
     @media screen and (max-width:766px) {
         height: 180px;
+        margin-bottom: 8px;
     }
     img {
         width: 100%;
