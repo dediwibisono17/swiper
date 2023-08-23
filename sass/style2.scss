@@ -247,3 +247,17 @@ p {
         object-fit: contain;
     }
 }
+
+.is-desktop {
+    display: block;
+    @media screen and (max-width:766px) {
+        display: none;
+    }
+}
+
+.is-mobile {
+    display: none;
+    @media screen and (max-width:766px) {
+        display: block;
+    }
+}
