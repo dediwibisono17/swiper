@@ -18,7 +18,7 @@ $(function () {
   });
 
   $("body").keydown(function(e) {
-      e.preventDefault();
+      // e.preventDefault();
     if(e.keyCode == 38) { // top
       console.log('top');
       $('.swiper-button-prev').click();
@@ -32,10 +32,7 @@ $(function () {
   });
 
   $("#button").click(function(){
-    // alert(1)
-    // $("html, body").animate({ scrollTop: 0 }, "slow");
     swiper.slideTo(0);
-    // return false;
   })
 
  
