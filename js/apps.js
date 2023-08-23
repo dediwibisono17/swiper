@@ -4,7 +4,7 @@ $(window).on('load', function() {
 
 setTimeout(() => {
   $('#myModal').modal('hide');
-}, 5000);
+}, 6000);
 
 $(function () {
   var swiper = new Swiper('.swiper-container', {
