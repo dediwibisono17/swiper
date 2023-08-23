@@ -190,10 +190,10 @@ p {
     z-index: 8;
     cursor: pointer;
     @media screen and (max-width:766px) {
-        transform: translate(-50%,-50%);
-        cursor: pointer;
-        left: 50%;
-        right: initial;
+        // transform: translate(-50%,-50%);
+        // cursor: pointer;
+        // left: 50%;
+        // right: initial;
     }
     img {
         width: 24px;
