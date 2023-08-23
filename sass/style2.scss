@@ -127,6 +127,9 @@ p {
     p {
         font-weight: 700;
         font-size: 1.5rem;
+        @media screen and (max-width:766px) {
+            font-size: 1.2rem;
+        }
     }
     @media screen and (max-width:766px) {
         width: 80%;
