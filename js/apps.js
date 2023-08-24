@@ -6,6 +6,24 @@
 // var myModal = $("#myModal");
 // myModal.addClass(ls);
 
+var userAgent = window.navigator.userAgent.toLowerCase(),
+safari = /safari/.test( userAgent ),
+ios = /iphone|ipod|ipad/.test( userAgent ),
+android = /android/i.test(userAgent),
+chrome = /Chrome/.test(navigator.userAgent);
+if( ios ) {	    
+    if ( !safari ) {  
+     $("#nav").hide()
+   //  alert("apps ios");
+    }
+}
+else if (android) {
+//  alert('apps android')
+ $("#nav").hide()
+}
+else {	    
+};
+
 $('#myModal').modal('show');
 setTimeout(function(){
   $('#tutupmodal').click();
@@ -58,3 +76,6 @@ $(function () {
   
   
 });
+
+
+

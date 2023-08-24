@@ -401,5 +401,57 @@ p {
     font-size: 2rem;
     @media screen and (max-width:766px) {
         right: 16px;
+        top: 8px;
     }
+}
+
+
+.bg-blues {
+    background: #eee;
+}
+
+
+.baca-detikx {
+    .bacajuga_box {
+        display: initial !important;
+        .container {
+            display: none;
+        }
+    }
+    .bacajuga {
+        width: 100% !important;
+        display: block;
+        a {
+            display: inline-block;
+            padding: 0px;
+            width: 47% !important;
+            margin: 0 5px;
+            position: relative;
+            height: 45vh;
+            text-align: left;
+            @media screen and (max-width:766px) {
+                width: 100% !important;
+                margin: 4px 0;
+                height: 35vh;
+            }
+            &:hover {
+                text-decoration: none;
+                color: orange !important;
+            }
+            article {
+                position: absolute;
+                top: initial;
+                /* transform: translateY(-50%); */
+                width: 100%;
+                background: linear-gradient(to top, black, transparent);
+                padding: 8px;
+                bottom: 0;
+                transform: initial;
+                h2 {
+                    font-family: 'Prompt' !important;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }   
 }
