@@ -396,6 +396,7 @@ p {
 #closes {
     position: fixed;
     top: 16px;
+    cursor: pointer;
     right: 20vw;
     font-size: 2rem;
     @media screen and (max-width:766px) {

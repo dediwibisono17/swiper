@@ -45,6 +45,8 @@ $(function () {
   })
 
 
-  
+  $("#keatas").click(function(){
+    $('.modal-content').animate({ scrollTop: 0 }, 'slow');
+  })
   
 });
