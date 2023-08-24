@@ -6,7 +6,7 @@
 $('#myModal').modal('show');
 setTimeout(function(){
   $('#tutupmodal').click();
-}, 6000)
+}, 5000)
 $(function () {
   var swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
