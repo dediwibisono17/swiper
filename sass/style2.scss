@@ -424,11 +424,19 @@ p {
         a {
             display: inline-block;
             padding: 0px;
-            width: 47% !important;
+            width: 45% !important;
             margin: 0 5px;
             position: relative;
+            font-family: 'Hepta Slab' !important;
+            border-radius: 24px;
+            // filter: drop-shadow(2px 4px 6px black);
+            background: white;
             height: 45vh;
             text-align: left;
+            &::after {
+               background:  rgba(0, 0, 0, 0.3) !important;
+               border-radius: 24px;
+            }
             @media screen and (max-width:766px) {
                 width: 100% !important;
                 margin: 4px 0;
@@ -441,10 +449,11 @@ p {
             article {
                 position: absolute;
                 top: initial;
+                border-radius: 24px;
                 /* transform: translateY(-50%); */
                 width: 100%;
                 background: linear-gradient(to top, black, transparent);
-                padding: 8px;
+                padding: 16px;
                 bottom: 0;
                 transform: initial;
                 h2 {
