@@ -1,12 +1,19 @@
 // $(window).on('load', function() {
 //   $('#myModal').modal('show');
 // });
-
+// Set Item
+// document.getElementById("demo").innerHTML = localStorage.getItem("lastname");
+// var myModal = $("#myModal");
+// myModal.addClass(ls);
 
 $('#myModal').modal('show');
 setTimeout(function(){
   $('#tutupmodal').click();
 }, 5000)
+
+
+
+
 $(function () {
   var swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
@@ -48,5 +55,6 @@ $(function () {
   $("#keatas").click(function(){
     $('.modal-content').animate({ scrollTop: 0 }, 'slow');
   })
+  
   
 });
