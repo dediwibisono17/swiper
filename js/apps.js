@@ -1,11 +1,12 @@
-$(window).on('load', function() {
-  $('#myModal').modal('show');
-});
+// $(window).on('load', function() {
+//   $('#myModal').modal('show');
+// });
 
-setTimeout(() => {
-  $('#myModal').modal('hide');
-}, 6000);
 
+$('#myModal').modal('show');
+setTimeout(function(){
+  $('#tutupmodal').click();
+}, 6000)
 $(function () {
   var swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
