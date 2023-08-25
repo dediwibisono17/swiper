@@ -9,13 +9,42 @@ font-family: 'Prompt';
 .quote {
    
     font-family: "Hepta Slab";
-    font-size: 1.5rem;
-    line-height: 2.2rem;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
     margin: 0.8rem;
-    @media screen and (max-width:375px) {
+    position: relative;
+    @media screen and (max-width:766px) {
         font-size: 1.2rem;
         line-height: 1.6rem;
+        margin: 0.8rem 1rem;
     }
+    &::before {
+        content: "";
+        background-image: url(../img/quotes.png);
+        background-size: contain;
+        position: absolute;
+        top: -16px;
+        background-repeat: no-repeat;
+        left: -31px;
+        opacity: .5;
+        width: 32px;
+        height: 32px;
+        @media screen and (max-width:766px) {
+            top: -12px;
+            background-repeat: no-repeat;
+            left: -24px;
+            opacity: .5;
+            width: 24px;
+            height: 24px;
+        }
+    
+    }
+
+    &::after {
+        content: "''";
+        font-weight: 700;
+    }
+   
 
 }
 
@@ -48,6 +77,19 @@ background: linear-gradient(45deg, #eee, transparent);
     // justify-content: flex-start;
     // align-items: baseline;
     
+}
+.images {
+    width: 30vw;
+    height: auto;
+    margin: 0 auto 24px;
+    @media screen and (max-width:766px) {
+        width: 50vw;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 p {
     @media screen and (max-width:766px) {
@@ -201,6 +243,18 @@ p {
     margin: 0 auto;
     @media screen and (max-width:766px) {
         width: 78%;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #9c9c9c;
+        border-color: #9c9c9c;
+        border-radius: 24px;
+        font-size: 1.2rem;
+        filter: drop-shadow(1px 2px 3px #ccc);
+        &:focus,&:active,&:hover {
+            box-shadow: none;
+        } 
     }
 }
 
