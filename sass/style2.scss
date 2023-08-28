@@ -559,9 +559,19 @@ p {
     margin: 0 auto 16px;
     top: 0;
     left: 50%;
-    transform: translate(-50%,20%);
+    transform: translate(-50%,0%);
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        background: linear-gradient(to bottom, transparent,#eee);
+    }
     @media screen and (max-width:766px) {
         width: 240px;
+        transform: translate(-50%,20%);
     }
     img {
         width: 100%;
@@ -569,14 +579,27 @@ p {
         object-fit: contain;
     }
 }
-
+.all {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    /* background: #eee; */
+    padding: 8px 32px;
+    backdrop-filter: blur(5px);
+    border-radius: 16px;
+}
 .data-all {
     margin-bottom: 8px;
     div {
         color: #111;
     }
+    .title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #333;
+    }
     .name {
-        font-weight: bold;
+        // font-weight: bold;
     }
 }
 
