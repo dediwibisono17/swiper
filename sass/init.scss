@@ -121,8 +121,12 @@ font-family: 'Prompt';
     img {
         width: 100%;
         height: 100%;
-        border-radius: 16px;
         object-fit: contain;
+        @media screen and (max-width:766px) {
+            border-radius: 16px;
+            object-fit: cover;
+            
+        }
     }
 }
 
