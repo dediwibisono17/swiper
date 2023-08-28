@@ -71,6 +71,7 @@ font-size: 18px;
 justify-content: center;
 align-items: center;
 text-align: left;
+
 // background-color: #fff;
 background: linear-gradient(45deg, #eee, transparent);
 @media screen and (max-width:766px) {
@@ -92,6 +93,8 @@ background: linear-gradient(45deg, #eee, transparent);
     }
 }
 p {
+    position: relative;
+    z-index: 8;
     @media screen and (max-width:766px) {
         font-size: 1rem;
     }
@@ -241,6 +244,8 @@ p {
     display: block;
     width: 860px;
     padding-top: 32px;
+    // position: relative;
+    // z-index: 8;
     margin: 0 auto;
     @media screen and (max-width:766px) {
         width: 78%;
