@@ -554,7 +554,12 @@ p {
 .penulis {
     width: 320px;
     height: auto;
+    position: absolute;
+    height: auto;
     margin: 0 auto 16px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,20%);
     @media screen and (max-width:766px) {
         width: 240px;
     }
@@ -567,6 +572,9 @@ p {
 
 .data-all {
     margin-bottom: 8px;
+    div {
+        color: #111;
+    }
     .name {
         font-weight: bold;
     }
