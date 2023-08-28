@@ -1,0 +1,41 @@
+.quote {
+   
+    font-family: "Hepta Slab";
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    margin: 0.8rem;
+    position: relative;
+    @media screen and (max-width:766px) {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        margin: 0.8rem 1rem;
+    }
+    &::before {
+        content: "";
+        background-image: url(../img/quotes.png);
+        background-size: contain;
+        position: absolute;
+        top: -16px;
+        background-repeat: no-repeat;
+        left: -31px;
+        opacity: .5;
+        width: 32px;
+        height: 32px;
+        @media screen and (max-width:766px) {
+            top: -12px;
+            background-repeat: no-repeat;
+            left: -24px;
+            opacity: .5;
+            width: 24px;
+            height: 24px;
+        }
+    
+    }
+
+    &::after {
+        content: "''";
+        font-weight: 700;
+    }
+   
+
+}

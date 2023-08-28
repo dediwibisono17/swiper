@@ -1,0 +1,102 @@
+#nav {
+    background: rgba(black,.5);
+    height: 60px;
+    #logo {
+        width: 90px;
+    }
+}
+#nav {
+    background: rgba($color: black, $alpha: .6);
+    z-index: 19 !important;
+    backdrop-filter: blur(11px);
+    @media screen and (max-width: 766px) {
+        backdrop-filter: initial;
+    }
+}
+
+.share_icon>a {
+    padding: 0 !important;
+}
+
+#share {
+    z-index: 108 !important;
+}
+
+.share_icon>a i {
+    font-size: 25px !important;
+    line-height: initial !important;
+    @media screen and (max-width: 766px) {
+        font-size: 16px !important;
+        line-height: initial !important;
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+
+#komen-modal {
+    .modal-body {
+        @media screen and (max-width:766px) {
+            padding: 0;
+        }
+    }
+    
+    .modal-content {
+        height: 80vh;
+        overflow-y: auto;
+    }
+
+}
+
+.baca-detikx {
+    .bacajuga_box {
+        display: initial !important;
+        .container {
+            display: none;
+        }
+    }
+    .bacajuga {
+        width: 100% !important;
+        display: block;
+        a {
+            display: inline-block;
+            padding: 0px;
+            width: 45% !important;
+            margin: 0 5px;
+            position: relative;
+            font-family: 'Hepta Slab' !important;
+            border-radius: 24px;
+            // filter: drop-shadow(2px 4px 6px black);
+            background: white;
+            height: 45vh;
+            text-align: left;
+            &::after {
+               background:  rgba(0, 0, 0, 0.3) !important;
+               border-radius: 24px;
+            }
+            @media screen and (max-width:766px) {
+                width: 100% !important;
+                margin: 4px 0;
+                height: 35vh;
+            }
+            &:hover {
+                text-decoration: none;
+                color: orange !important;
+            }
+            article {
+                position: absolute;
+                top: initial;
+                border-radius: 24px;
+                /* transform: translateY(-50%); */
+                width: 100%;
+                background: linear-gradient(to top, black, transparent);
+                padding: 16px;
+                bottom: 0;
+                transform: initial;
+                h2 {
+                    font-family: 'Prompt' !important;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }   
+}
