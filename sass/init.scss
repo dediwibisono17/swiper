@@ -280,8 +280,8 @@ font-family: 'Prompt';
     height: auto;
     margin: 0 auto 16px;
     top: 0;
-    left: 50%;
-    transform: translate(-50%,0%);
+    right: 10%;
+    transform: translate(0%, 0);
     &::before {
         content: "";
         position: absolute;
@@ -293,7 +293,7 @@ font-family: 'Prompt';
     }
     @media screen and (max-width:766px) {
         width: 150px;
-        transform: translate(-50%,20%);
+        transform: translate(-50%,50%);
     }
     img {
         width: 100%;
