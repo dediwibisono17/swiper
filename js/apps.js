@@ -60,19 +60,19 @@ $(function () {
          //$('.wrap').attr({"data-aos":"fade-in", "data-aos-delay":"1000", "data-aos-duration":"1000"});
         // $('.wrap').removeAttr('data-aos data-aos-delay data-aos-duration');
         // $(this).removeClass('aos-init')
-        $('.wrap').hide(0);
-        $('.wrap').removeClass('aos-init').removeClass('aos-animate');
+        // $('.wrap').hide(0);
+        // $('.wrap').removeClass('aos-init').removeClass('aos-animate');
         console.log('ini hilang');
         
       },
       slideChangeTransitionEnd: function () {
         //$('.wrap').attr({"data-aos":"fade-in", "data-aos-delay":"1000", "data-aos-duration":"1000"});
         // $('.wrap').addClass('aos-animate')
-        setTimeout(() => {
-           $('.wrap').fadeIn();
+        // setTimeout(() => {
+        //    $('.wrap').fadeIn();
           
-        }, 1000);
-        AOS.init();
+        // }, 1000);
+        // AOS.init();
 
         console.log('ini ada');
       },
