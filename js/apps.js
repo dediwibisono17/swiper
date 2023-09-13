@@ -68,7 +68,10 @@ $(function () {
       slideChangeTransitionEnd: function () {
         //$('.wrap').attr({"data-aos":"fade-in", "data-aos-delay":"1000", "data-aos-duration":"1000"});
         // $('.wrap').addClass('aos-animate')
-        $('.wrap').fadeIn();
+        setTimeout(() => {
+           $('.wrap').fadeIn();
+          
+        }, 1000);
         AOS.init();
 
         console.log('ini ada');
