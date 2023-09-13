@@ -32,7 +32,10 @@ setTimeout(function(){
 
 
 
+AOS.init();
 $(function () {
+  // $(".swiper-slide .wrap").attr({"data-aos":"fade-in"})
+  // $(".swiper-slide .wrap").attr({"data-aos":"fade-in", "data-aos-delay":"1000", "data-aos-duration":"1000"})
   var swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
     mousewheel: true,
@@ -45,10 +48,33 @@ $(function () {
       type: 'fraction',
       
     },
+
+   
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
-    }
+    },
+    on: {
+      slideChangeTransitionStart: function () {
+        
+         //$('.wrap').attr({"data-aos":"fade-in", "data-aos-delay":"1000", "data-aos-duration":"1000"});
+        // $('.wrap').removeAttr('data-aos data-aos-delay data-aos-duration');
+        // $(this).removeClass('aos-init')
+        $('.wrap').hide(0);
+        $('.wrap').removeClass('aos-init').removeClass('aos-animate');
+        console.log('ini hilang');
+        
+      },
+      slideChangeTransitionEnd: function () {
+        //$('.wrap').attr({"data-aos":"fade-in", "data-aos-delay":"1000", "data-aos-duration":"1000"});
+        // $('.wrap').addClass('aos-animate')
+        $('.wrap').fadeIn();
+        AOS.init();
+
+        console.log('ini ada');
+      },
+    
+    } 
   });
 
   $("body").keydown(function(e) {
@@ -78,4 +104,5 @@ $(function () {
 });
 
 
+  // AOS.init();
 
