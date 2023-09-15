@@ -15,9 +15,9 @@ var swiper = new Swiper('.swiper-container', {
       $('.card').show(0);
       AOS.init();
     },
-  } 
+  }
 
 
-}); 
+});
 
 AOS.init();
