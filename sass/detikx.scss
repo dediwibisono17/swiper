@@ -53,6 +53,10 @@
     line-height: 14px;
     margin-top: 5px;
     color: #4a4a4a;
+    @media screen and (max-width:766px) {
+        font-size: 10px;
+        line-height: 12px;
+    }
     .foto {
         color: #111;
     }
