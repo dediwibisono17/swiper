@@ -10,6 +10,7 @@ var swiper = new Swiper('.swiper-container', {
     slideChangeTransitionStart: function () {
       $('.card').hide(0);
       $('.card').removeClass('aos-init').removeClass('aos-animate');
+      console.log($('.card').hide(0));
     },
     slideChangeTransitionEnd: function () {
       $('.card').show(0);
