@@ -35,8 +35,9 @@ setTimeout(function () {
 
 $(function () {
   // $(".swiper-slide .wrap").attr({ "data-aos": "fade-in" })
-  $(".swiper-slide .wrap").attr({ "data-aos": "fade-down", "data-aos-delay": "500", "data-aos-duration": "700" })
+  $(".swiper-slide .wrap").attr({ "data-aos": "fade-right", "data-aos-delay": "500", "data-aos-duration": "700" })
   // $(".swiper-slide .wrap").removeClass('aos-animate')
+
   var swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
     mousewheel: true,
@@ -63,9 +64,11 @@ $(function () {
         // $('.wrap').hide(0);
         // $('.wrap').hide(0);
         // $('.wrap').removeClass('aos-init').removeClass('aos-animate');
-        $(".swiper-slide .wrap").removeClass('aos-animate');
-        $(".swiper-slide .wrap").removeClass('aos-init');
-        console.log('ini hilang');
+        setTimeout(() => {
+          $(".swiper-slide .wrap").removeClass('aos-animate');
+          $(".swiper-slide .wrap").removeClass('aos-init');
+
+        }, 10);
 
       },
       slideChangeTransitionEnd: function () {
@@ -76,7 +79,6 @@ $(function () {
         //   $('.wrap').fadeIn();
 
         // }, 1000);
-        $(".swiper-slide .wrap").removeClass('aos-animate')
         setTimeout(() => {
           $(".swiper-slide .wrap").addClass('aos-animate')
         }, 200);
