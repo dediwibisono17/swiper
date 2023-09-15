@@ -228,12 +228,17 @@ font-family: 'Prompt';
 
 .ilustrasi {
     position: absolute;
-    left: -20px;
-    top: -30px;
     width: 200px;
     opacity: .7;
     height: auto;
+    left: -120px;
+    top: -130px;
     filter: grayscale(1);
+    @media screen and (max-width:766px) {
+        
+        left: -20px;
+        top: -30px;
+    }
 
     &::before {
         content: "";
