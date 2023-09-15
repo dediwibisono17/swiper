@@ -51,12 +51,27 @@ font-family: 'Prompt';
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
+    text-align: center;
+    border-bottom: 1px dashed #111;
+    .topik {
+        background: red;
+        width: fit-content;
+        padding: 2px 8px;
+        margin: 0 auto 8px;
+        color: white;
+    }
+    .date {
+        font-size: .85rem;
+        // width: fit-content;
+        margin: 0 auto;
+        // border-bottom: 1px dashed #111;
+    }
     p {
         // font-weight: 700;
         font-family: 'Hepta Slab';
         font-size: 1.5rem;
         @media screen and (max-width:766px) {
-            font-size: 1.2rem;
+            font-size: 1.2rem !important;
         }
 
     }
