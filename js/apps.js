@@ -35,7 +35,7 @@ setTimeout(function () {
 
 $(function () {
   // $(".swiper-slide .wrap").attr({ "data-aos": "fade-in" })
-  $(".swiper-slide .wrap").attr({ "data-aos": "fade-right", "data-aos-delay": "500", "data-aos-duration": "700" })
+  $(".swiper-slide .wrap").attr({ "data-aos": "fade-down", "data-aos-delay": "500", "data-aos-duration": "700" })
   // $(".swiper-slide .wrap").removeClass('aos-animate')
 
   var swiper = new Swiper('.swiper-container', {
@@ -81,6 +81,7 @@ $(function () {
         // }, 1000);
         setTimeout(() => {
           $(".swiper-slide .wrap").addClass('aos-animate')
+          $(".swiper-slide").not('.swiper-slide-active').children().removeClass('aos-animate')
         }, 200);
         AOS.init();
 
